@@ -1,0 +1,36 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-update
+sudo apt autoremove
+sudo apt-get install openssh-server
+ip addr 
+sudo apt-get install apache2
+cd /var/www/html/
+sudo nano php_info.php >> <?php phpinfo();
+
+sudo apt-get install php php-curl php-xml libapache2-mod-php php-mysql php-mbstring php-gettext php-fpm
+
+sudo apt-get install mysql-server mysql-client
+
+sudo mysql_secure_installation
+
+strong 1
+ y n y y
+
+mysql -u root -p
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+
+ALTER USER `root`@`localhost` IDENTIFIED WITH mysql_native_password BY 'yourPass';
+
+FLUSH PRIVILEGES;
+
+sudo apt-get install phpmyadmin
+apache2
+sudo systemctl restart apache2
+
+thanks
+
+
+
+
